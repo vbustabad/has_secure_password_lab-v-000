@@ -1,0 +1,11 @@
+<h1> Login Page </h1>
+
+<%= form_for :user, url: '/sessions' do |f| %>
+  Username: <%= f.text_field :name %><br />
+  <br />
+  Password: <%= f.password_field :password %><br />
+  <br />
+<%= f.submit "Submit" %>
+<% end %>
+
+<p> <%= link_to "Logout", logout_path %> </p>
